@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uli_FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_white" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/list_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/uli_FFFFFF"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/txt_show_current_letter"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@color/uli_bg"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@color/uli_FFFFFF"
+                android:textSize="50dp"
+                android:visibility="gone" />
+
+            <com.cxw.cxwproject.util.SideBar
+                android:id="@+id/side_bar"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="120dp" />
+
+            <LinearLayout
+                android:id="@+id/title_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:background="#64a300" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#3CAC48"
+                    android:padding="5dp"
+                    android:text="A"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.cxw.cxwproject.widget.EmptyLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.cxw.cxwproject.widget.EmptyLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_cartlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/uli_F5F5F5"
+        android:divider="@null"
+        android:overScrollMode="never"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderBackground="#FFFFFF"
+        ptr:ptrMode="pullFromStart"
+        ptr:ptrShowIndicator="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/uli_DCDDDD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/uli_FFFFFF"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/all_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox_cart_selector"
+            android:paddingLeft="10dp"
+            android:text="全选"
+            android:textColor="@color/uli_797979"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/pricedisplay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="合计："
+                    android:textColor="@color/uli_797979"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/poptotalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="￥0"
+                    android:textColor="@color/uli_FF0000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="不含运费"
+                android:textColor="@color/uli_797979"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@color/uli_bg"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="结算(0)"
+            android:textColor="@color/uli_FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

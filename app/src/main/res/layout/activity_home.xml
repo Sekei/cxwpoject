@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uli_F5F5F5"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <!-- 上边主页面 -->
+
+    <FrameLayout
+        android:id="@+id/fragement_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <!-- 底部菜单页面 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/uli_DCDDDD" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/uli_F5F5F5" >
+
+        <RadioGroup
+            android:id="@+id/bottomRg"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/uli_F5F5F5"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbOne"
+                style="@style/rg_btn_style"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_home_btn"
+                android:singleLine="true"
+                android:text="首页"
+                android:textColor="@drawable/tab_home_textview_btn"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/rbTwo"
+                style="@style/rg_btn_style"
+                android:drawableTop="@drawable/tab_more_btn"
+                android:singleLine="true"
+                android:text="热购"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/rbThree"
+                style="@style/rg_btn_style"
+                android:drawableTop="@drawable/tab_message_btn"
+                android:singleLine="true"
+                android:text="购物车"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/rblogistics"
+                style="@style/rg_btn_style"
+                android:drawableTop="@drawable/tab_square_btn"
+                android:enabled="false"
+                android:singleLine="true"
+                android:text="个人中心"
+                android:textSize="10sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.75" />
+
+            <View
+                android:id="@+id/personalcenter_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.25"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.cxw.cxwproject.util.ImageCycleView
+        android:id="@+id/page_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/uli_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="精选民族推荐" />
+        
+        </LinearLayout>
+
+        <com.cxw.cxwproject.util.MyListView
+            android:id="@+id/selected_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="@color/uli_00000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/uli_bg" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="区域民族风" />
+
+                <View
+                    android:id="@+id/moreethnic_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="更多"
+                    android:visibility="gone"
+                    android:textColor="@color/uli_bg"/>
+            </LinearLayout>
+            <!-- 区域分类 -->
+
+            <com.cxw.cxwproject.util.GrapeGridview
+                android:id="@+id/region_gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/uli_FFFFFF"
+                android:cacheColorHint="@color/uli_00000000"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

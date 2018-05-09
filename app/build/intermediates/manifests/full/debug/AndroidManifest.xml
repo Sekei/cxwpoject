@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cxw.cxwproject"
+    android:versionCode="55"
+    android:versionName="1.1.1" > <!-- 解决Android L上通知显示异常问题，targetSdkVersion需要设置成22 -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.rece" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- UCrop裁剪框架权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.cxw.cxwproject" />
+    <!-- 加入读写联系人信息的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:name="com.cxw.cxwproject.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/cxw_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cxw.cxwproject.activity.StartApp"
+            android:label="@string/app_name"
+            android:theme="@style/strartTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cxw.cxwproject.activity.HomeActivity"
+            android:label="首页"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.AdminActivity"
+            android:label="个人中心" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.EvaluateActivity"
+            android:label="商品评价" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.OpinionActivity"
+            android:label="意见反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.HelpActivity"
+            android:label="客服与帮助"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.AllEvaluateActivity"
+            android:label="全部评价"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.NationalPageActivity"
+            android:label="民族列表页面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.ShowBigPictrueActivity"
+            android:label="商品大图查看"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.MemberDataActivity"
+            android:label="个人资料"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.MechatActivity"
+            android:label="在线沟通"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.BannerActivity"
+            android:label="启动广告"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.DetailsActivity"
+            android:label="商品详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.AddressActivity"
+            android:label="地址管理"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.AddressAddActivity"
+            android:label="新增地址"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.CollectionActivity"
+            android:label="我的收藏"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.AdvertisementActivity"
+            android:label="广告详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.StatementActivity"
+            android:label="特别申明"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.OrderManagementActivity"
+            android:label="订单列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.AddressEditActivity"
+            android:label="地址修改"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.PayBuyActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:label="支付页面"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.SetupActivity"
+            android:label="设置中心"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.NoticeActivity"
+            android:label="消息列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.SignActivity"
+            android:label="每日签到"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.NotificationDetailsActivity"
+            android:label="消息详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.BuyOrderActivity"
+            android:label="下订单界面"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.OrderDetailsActivity"
+            android:label="订单详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.AboutusActivity"
+            android:label="关于我们"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.NoviceActivity"
+            android:label="欢迎页"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.CopyrightActivity"
+            android:label="版权信息"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.NicknameActivity"
+            android:label="昵称修改"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.ShopSimpleActivity"
+            android:label="民族简介"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.GenderActivity"
+            android:label="修改性别"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.NewsSetupActivity"
+            android:label="通知消息设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.ExplainActivity"
+            android:label="积分说明"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.MoreEthnicActivity"
+            android:label="更多民族"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.LoginActivity"
+            android:label="登录界面"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.RegistrationActivity"
+            android:label="注册界面"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.ForgetPasswordActivity"
+            android:label="忘记密码"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cxw.cxwproject.activity.GeneralizedIntegralActivity"
+            android:label="关注微博/微信"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 每日签到系统广播提示 -->
+        <receiver
+            android:name="com.cxw.cxwproject.receiver.AlarmReceiver"
+            android:process=":remote" />
+        <!-- 个推SDK配置开始______配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="uSNXQHOUHK9JLbNSWcfZU7" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="jZ49udXv6a7d4yxs4SCEj3" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="jZ49udXv6a7d4yxs4SCEj3" />
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name="com.getui.push.PushDemoReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.uSNXQHOUHK9JLbNSWcfZU7" />
+            </intent-filter>
+        </receiver>
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true"
+            android:label="NotificationCenterUser" />
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.cxw.cxwproject"
+            android:exported="true"
+            android:process=":pushservice" />
+
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 个推SDK配置结束 -->
+
+
+        <!-- 友盟数据分析报表统计配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="582287508630f51690000e9d" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <!-- U盟分享相关 -->
+        <!-- wechat callback -->
+        <activity
+            android:name="com.cxw.cxwproject.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- tencent -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105786697" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 新浪微博相关 -->
+        <activity
+            android:name="com.cxw.cxwproject.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+
+        <!-- Ping++ sdk -->
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信支付 sdk ，也是 Ping++ sdk 调用入口 -->
+        <!-- <activity-alias -->
+        <!-- android:name=".wxapi.WXPayEntryActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:targetActivity="com.pingplusplus.android.PaymentActivity" /> -->
+
+
+        <!-- 支付宝支付相关 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 微信支付 -->
+        <activity
+            android:name="com.cxw.cxwproject.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/NoTitleTranslucentTheme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uli_FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_white" />
+
+    <EditText
+        android:id="@+id/command"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/uli_F5F5F5"
+        android:gravity="center"
+        android:hint="瑞坤扬口令"
+        android:singleLine="true"
+        android:textColor="@color/uli_797979"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/generalized_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/textview_style"
+        android:gravity="center"
+        android:text="领取积分"
+        android:textColor="@color/uli_FFFFFF"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/uli_F5F5F5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="口令获取途径："
+        android:textColor="@color/uli_bg"
+        android:textSize="16sp" />
+
+    <com.cxw.cxwproject.util.MyListView
+        android:id="@+id/generalized_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@null"
+        android:listSelector="@color/uli_00000000" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/evaluate_view_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/uli_F5F5F5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="商品评价" />
+
+    <TextView
+        android:id="@+id/good_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/statistics_icon"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="超过85%的人认为非常值得购买"
+        android:textColor="@color/uli_D4AF37"
+        android:visibility="gone" />
+
+    <com.cxw.cxwproject.util.CustomListView
+        android:id="@+id/mcustomlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="10dp" />
+
+    <com.cxw.cxwproject.util.MyListView
+        android:id="@+id/evaluate_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:divider="@null"
+        android:listSelector="@color/uli_00000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/uli_F5F5F5" />
+
+    <TextView
+        android:id="@+id/all_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/arrow_1"
+        android:gravity="center"
+        android:text="查看全部评价（共48条）"
+        android:textColor="@color/uli_797979" />
+
+</LinearLayout>

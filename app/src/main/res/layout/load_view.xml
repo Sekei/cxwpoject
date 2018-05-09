@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rlv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="44dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/indication"
+            android:layout_width="23dp"
+            android:layout_height="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="82dp"
+            android:src="@drawable/shadow" />
+
+        <com.cxw.cxwproject.view.loading.TextViewLoadView
+            xmlns:rlv="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/id_loadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indication"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            rlv:direction="left"
+            rlv:load_style="text"
+            rlv:text="努力加载中..."
+            rlv:text_color_hightlight="@color/uli_bg"
+            rlv:text_color_normal="#757575"
+            rlv:text_size="14sp" />
+
+        <TextView
+            android:id="@+id/promptTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indication"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:minWidth="44dp"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <com.cxw.cxwproject.view.loading.ShapeLoadingView
+            android:id="@+id/shapeLoadingView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

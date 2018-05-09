@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题色 -->
+    <color name="uli_bg">#eb591b</color>
+    <!-- 主题色25%透明 -->
+    <color name="uli_bg_25">#3Feb591b</color>
+    <!-- 半透明色彩 -->
+    <color name="uli_bg_7F000000">#7F000000</color>
+    <!-- 黑色 -->
+    <color name="uli_bg_000000">#000000</color>
+    <!-- 烟白色 -->
+    <color name="uli_F5F5F5">#F5F5F5</color>
+    <!-- 白色 -->
+    <color name="uli_FFFFFF">#FFFFFF</color>
+    <!-- 半通明白色 -->
+    <color name="uli_7FFFFFFF">#7FFFFFFF</color>
+    <!-- 灰色字体 -->
+    <color name="uli_797979">#797979</color>
+    <!-- 淡色字体颜色 -->
+    <color name="uli_757575">#757575</color>
+    <!-- 分割线颜色 -->
+    <color name="uli_CCCCCC">#CCCCCC</color>
+    <!-- 淡黑色 -->
+    <color name="uli_2C2C2C">#2C2C2C</color>
+    <!-- 黄色 -->
+    <color name="uli_FF9142">#FF9142</color>
+    <!-- 淡黄色 -->
+    <color name="uli_FFEC8B">#FFEC8B</color>
+    <!-- 黑色字体 -->
+    <color name="uli_3E3A39">#3E3A39</color>
+    <!-- 灰黑色字体 -->
+    <color name="uli_DCDDDD">#DCDDDD</color>
+    <!-- 透明色 -->
+    <color name="uli_00000000">#00000000</color>
+    <!-- 红色字体 -->
+    <color name="uli_FF0000">#FF0000</color>
+    <!-- 淡红色 -->
+    <color name="uli_FD2742">#FD2742</color>
+    <!-- 粉红色 -->
+    <color name="uli_FF5449">#FF5449</color>
+    <!-- 热情的粉红字体 -->
+    <color name="uli_FF69B4">#FF69B4</color>
+    <!-- 夜色星空色 -->
+    <color name="uli_070930">#070930</color>
+    <!-- 深橙色 -->
+    <color name="uli_FF8C00">#FF8C00</color>
+    <!-- 金色 -->
+    <color name="uli_D4AF37">#D4AF37</color>
+    <!-- off自定义开关颜色组 -->
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">#33019285</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_checked">#019285</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+    <!-- loading颜色组 -->
+    <color name="triangle">#aaeb591b</color>
+    <color name="circle">#aaeb591b</color>
+    <color name="rect">#aaeb591b</color>
+    <!-- 上面3个为变动色彩 -->
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#25808080</color>
+    <color name="dialog_bg">#f5f5f5</color>
+    <!-- 自定义button效果loading色彩组 -->
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+    <!-- 组合加、减控件 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#eb591b</color>
+    <color name="divider">#ffd2d2d2</color>
+
+    <color name="uli_0e000000">#0e000000</color>
+
+
+</resources>

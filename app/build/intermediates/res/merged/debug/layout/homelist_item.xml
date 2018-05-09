@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uli_FFFFFF"
+    android:orientation="vertical" >
+
+    <com.cxw.cxwproject.util.ImageCycleView
+        android:id="@+id/page_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/information_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/tuotiao_icon" />
+
+        <com.cxw.cxwproject.view.UPMarqueeView
+            android:id="@+id/upview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- 一排1个布局 -->
+
+    <ImageView
+        android:id="@+id/view_recommend1_top_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+    <!-- 一排2个布局 -->
+
+    <com.cxw.cxwproject.util.GrapeGridview
+        android:id="@+id/view_recommend1_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/uli_00000000"
+        android:listSelector="@null"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" />
+    <!-- 一排3个布局风格 -->
+
+    <com.cxw.cxwproject.util.GrapeGridview
+        android:id="@+id/region_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uli_FFFFFF"
+        android:cacheColorHint="@color/uli_00000000"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" />
+
+</LinearLayout>

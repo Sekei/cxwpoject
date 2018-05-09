@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="36dp"
+    android:orientation="horizontal" >
+
+    <!--
+分割线
+ android:background="@drawable/bg_amount_layout"
+    android:divider="@drawable/divider"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    -->
+
+    <Button
+        android:id="@+id/btnDecrease"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/reduce_icon" />
+
+    <TextView
+        android:id="@+id/etAmount"
+        android:layout_width="50dp"
+        android:layout_height="36dp"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/uli_797979"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btnIncrease"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:background="@drawable/plus_icon" />
+
+</LinearLayout>

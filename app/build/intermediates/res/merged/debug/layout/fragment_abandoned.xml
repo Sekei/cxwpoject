@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/uli_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="尘晓屋"
+            android:textColor="@color/uli_FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/notice"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/notice_icon" />
+
+        <ImageView
+            android:id="@+id/sign_stn"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/sign_icon" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.cxw.cxwproject.view.PullToRefreshView
+            android:id="@+id/pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/uli_FFFFFF"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.cxw.cxwproject.util.ImageCycleView
+                        android:id="@+id/page_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp" />
+
+                    <com.cxw.cxwproject.util.GrapeGridview
+                        android:id="@+id/gift_gridview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:cacheColorHint="#00000000"
+                        android:columnWidth="1dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="4"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/tuotiao_icon" />
+
+                        <com.cxw.cxwproject.view.UPMarqueeView
+                            android:id="@+id/upview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <!-- 第一波推荐民族布局风格 -->
+                    <include layout="@layout/view_recommend1" />
+                    <!-- 第二波推荐民族布局风格 -->
+                    <include layout="@layout/view_recommend2" />
+                    <!-- 第三波推荐民族布局风格 -->
+                    <include layout="@layout/view_recommend3" />
+
+                    <com.cxw.cxwproject.util.MyListView
+                        android:id="@+id/selected_list"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:listSelector="@color/uli_00000000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:background="@color/uli_F5F5F5" />
+                        <!-- 区域分类 -->
+
+                        <com.cxw.cxwproject.util.GrapeGridview
+                            android:id="@+id/region_gridview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/uli_FFFFFF"
+                            android:cacheColorHint="@color/uli_00000000"
+                            android:listSelector="@null"
+                            android:numColumns="3"
+                            android:stretchMode="columnWidth" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.cxw.cxwproject.view.PullToRefreshView>
+
+        <com.cxw.cxwproject.widget.EmptyLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

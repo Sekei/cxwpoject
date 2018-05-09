@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uli_F5F5F5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_white" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.cxw.cxwproject.widget.RefreshLayout
+            android:id="@+id/swipelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/collection_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none" />
+        </com.cxw.cxwproject.widget.RefreshLayout>
+
+        <com.cxw.cxwproject.widget.EmptyLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.cxw.cxwproject.widget.EmptyLayout>
+    </FrameLayout>
+
+</LinearLayout>

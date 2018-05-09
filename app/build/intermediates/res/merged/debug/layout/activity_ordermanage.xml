@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uli_F5F5F5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_white" />
+
+    <com.cxw.cxwproject.widget.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/uli_FFFFFF"
+        app:pstsDividerColor1="@color/uli_FFFFFF"
+        app:pstsIndicatorColor1="@color/uli_bg"
+        app:pstsIndicatorHeight1="2dp"
+        app:pstsShouldExpand1="true"
+        app:pstsTabBackground1="@drawable/background_tab"
+        app:pstsUnderlineColor1="@color/uli_F5F5F5"
+        app:pstsUnderlineHeight1="1dp"
+        app:selectedTabTextColor1="@color/uli_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/uli_DCDDDD" />
+
+    <com.cxw.cxwproject.widget.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

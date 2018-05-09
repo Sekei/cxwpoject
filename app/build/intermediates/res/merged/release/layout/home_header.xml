@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.cxw.cxwproject.util.ImageCycleView
+        android:id="@+id/page_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <com.cxw.cxwproject.util.GrapeGridview
+        android:id="@+id/classification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/uli_FFFFFF"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingBottom="10dp"
+        android:verticalSpacing="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/uli_F5F5F5" />
+
+    <com.cxw.cxwproject.util.MyListView
+        android:id="@+id/largearea_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@null" />
+
+</LinearLayout>

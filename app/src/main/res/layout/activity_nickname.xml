@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_white" />
+
+    <EditText
+        android:id="@+id/nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:hint="请输入尘晓屋昵称"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="1.此昵称非登录会员名，仅用于场景展示"
+        android:textColor="@color/uli_797979"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="2.与尘晓屋业务或品牌冲突的昵称，尘晓屋有权收回"
+        android:textColor="@color/uli_797979"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/nickname_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/textview_style_theme"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/uli_FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

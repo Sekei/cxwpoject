@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.cxw.cxwproject.widget.InnerScrollView
+            android:id="@+id/scroll_page2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/uli_F5F5F5" >
+
+            <com.cxw.cxwproject.util.MyListView
+                android:id="@+id/journalismdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" />
+        </com.cxw.cxwproject.widget.InnerScrollView>
+
+        <com.cxw.cxwproject.widget.EmptyLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>
